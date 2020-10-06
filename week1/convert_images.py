@@ -39,7 +39,7 @@ for img in img_list:
                     background.paste(im, im.getchannel('A'))
                     image = background
                     # Save the image in jpeg format
-                    image.save("{}{}.jpeg".format(output_dir, img))
+                    image.save("{}{}".format(output_dir, img), "JPEG")
 
                 # For the black image
                 else:
